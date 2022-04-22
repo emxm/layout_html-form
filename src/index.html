@@ -2,16 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+      initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post">
+      <fieldset class="fldset"> <!-- BEGINING fildset 01 -->
+        <legend>Personal information</legend>
+        <label for="inpTxtId" class="blkClss">Surname:
+          <input 
+            type="text"
+            name="inpSNmNm"
+            id="inpSNmId"
+            required minlength="4"
+            maxlength="8"
+            autocomplete="off"
+            class="inpClss">
+        </label>
+        <label for="inpTxtId" class="blkClss">Name:
+          <input 
+            type="text"
+            name="inpNmNm"
+            id="inpNmId"
+            required minlength="4"
+            maxlength="8"
+            autocomplete="off"
+            class="inpClss">
+        </label>
+        <label for="inpNumId" class="blkClss">
+          How old are You?
+          <input
+          type="number"
+          name="inpNumNm"
+          id="inpNumId"
+          value="12"
+          min="1"
+          max="100"
+          class="inpClss">
+        </label>
+        <label for="inpDtId" class="blkClss">
+          Full date of birth:
+          <input
+            type="date"
+            name="inpDtNm"
+            id="inpDtId"
+            class="inpClss">
+        </label>
+        <label for="inpChBId" class="blkClss">
+          I accept the term of the agreement 
+          <input
+            type="checkbox"
+            name="inpChBNm"
+            id="inpChBId"
+            required
+            class="inpClss">
+        </label>
+      </fieldset>
+      <fieldset class="fldset"> <!-- BEGINING fildset 02 -->
+        <legend>Registration</legend>
+        <label for="inpMlId" class="blkClss">E-mail:
+          <input
+            type="email"
+            name="inpMlNm"
+            id="inpMlId"
+            placeholder="email@example.com"
+            required class="inpClss">
+        </label>
+        <label for="inpPwdId" class="blkClss">Password:
+          <input
+            type="password"
+            name="inpPwdNm"
+            id="inpPwdId"
+            minlength="8"
+            maxlength="12"
+            required
+            lass="inpClss">
+        </label>
+      </fieldset>
+      <fieldset class="fldset"> <!-- BEGINING fildset 03 -->
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+        <label for="inpRadId1" class="inlnClss">
+          <input
+            type="radio"
+            name="inpRadNm"
+            id="inpRadId1"
+            class="inpClss">
+          Yes
+        </label>
+        <label for="inpRadId2" class="inlnClss">
+          <input
+            type="radio"
+            name="inpRadNm"
+            id="inpRadId2"
+            class="inpClss">
+          No
+        </label>
+        <label for="inpClrId" class="blkClss">
+          What is your favorite color?
+          <input
+            type="color"
+            name="inpClrNm"
+            id="inpClrId"
+            class="inpClss">
+        </label>
+        <label for="inpTmId" class="blkClss">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="inpTmNm"
+            id="inpTmId"
+            class="inpClss">
+        </label>
+        <label for="selMId" class="blkClss">
+          What are your favorite brand of cars?
+          <select
+            name="selMNm"
+            id="selMId"
+            multiple
+            class="inpClss">
+            <option value="value0" selected>BMW</option>
+            <option value="value1">Audi</option>
+            <option value="value2">Lada</option>
+          </select>
+        </label>
+        <label for="inpRngId" class="blkClss">
+          How do you rate our work?
+          <input
+            type="range"
+            name="inpRngNm"
+            id="inpRngId"
+            class="inpClss">
+        </label>
+      </fieldset>
+      <fieldset class="fldset">  <!-- BEGINING fildset 04 -->
+        <legend>Additional info:</legend>
+        <label for="txtAId" class="blkClss">
+          Comments:
+          <textarea
+            placeholder="About me..."
+            name="txtANm"
+            id="txtAId"
+            class="inpClss">
+          </textarea>
+        </label>
+        <label for="selId" class="blkClss">
+          Would you recommend us?
+          <select
+            name="selNm"
+            id="selId"
+            class="inpClss">
+            <option value="value0">yes</option>
+            <option value="value1">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <label for="sbmtId" class="blkClss">
+        <input
+          type="submit"
+          id="sbmtId"
+          name="sbmtNm"
+          >
+      </label>
+    </form>
   </body>
 </html>

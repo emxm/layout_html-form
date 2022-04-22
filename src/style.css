@@ -1,1 +1,14 @@
-/* styles go here */
+.fldset {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+
+.blkClss {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.inlnClss {
+  display: inline-block;
+  margin-bottom: 10px;
+}
