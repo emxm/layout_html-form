@@ -1,14 +1,14 @@
-.fldset {
+.fieldset {
   margin-bottom: 20px;
   padding-bottom: 0;
 }
 
-.blkClss {
+.blockClass {
   display: block;
   margin-bottom: 10px;
 }
 
-.inlnClss {
+.inlineClass {
   display: inline-block;
   margin-bottom: 10px;
 }

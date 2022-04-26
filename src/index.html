@@ -13,163 +13,186 @@
     <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post">
-      <fieldset class="fldset"> <!-- BEGINING fildset 01 -->
+      method="post"
+    >
+      <fieldset class="fieldset"> <!-- BEGINING fieldset 01 -->
         <legend>Personal information</legend>
-        <label for="inpTxtId" class="blkClss">Surname:
+        <label for="surname" class="blockClass">
+          Surname:
           <input 
             type="text"
-            name="inpSNmNm"
-            id="inpSNmId"
+            name="surname"
+            id="surnameId"
             required minlength="4"
             maxlength="8"
             autocomplete="off"
-            class="inpClss">
+            class="formInput"
+          >
         </label>
-        <label for="inpTxtId" class="blkClss">Name:
+        <label for="nameId" class="blockClass">
+          Name:
           <input 
             type="text"
-            name="inpNmNm"
-            id="inpNmId"
-            required minlength="4"
+            name="name"
+            id="nameId"
+            required
+            minlength="4"
             maxlength="8"
             autocomplete="off"
-            class="inpClss">
+            class="formInput"
+          >
         </label>
-        <label for="inpNumId" class="blkClss">
+        <label for="ageId" class="blockClass">
           How old are You?
           <input
-          type="number"
-          name="inpNumNm"
-          id="inpNumId"
-          value="12"
-          min="1"
-          max="100"
-          class="inpClss">
+            type="number"
+            name="age"
+            id="ageId"
+            value="12"
+            min="1"
+            max="100"
+            class="formInput"
+          >
         </label>
-        <label for="inpDtId" class="blkClss">
+        <label for="dateId" class="blockClass">
           Full date of birth:
           <input
             type="date"
-            name="inpDtNm"
-            id="inpDtId"
-            class="inpClss">
+            name="date"
+            id="dateId"
+            class="formInput"
+          >
         </label>
-        <label for="inpChBId" class="blkClss">
+        <label for="acceptId" class="blockClass">
           I accept the term of the agreement 
           <input
             type="checkbox"
-            name="inpChBNm"
-            id="inpChBId"
+            name="accept"
+            id="acceptId"
             required
-            class="inpClss">
+            class="formInput"
+          >
         </label>
       </fieldset>
-      <fieldset class="fldset"> <!-- BEGINING fildset 02 -->
+      <fieldset class="fieldset"> <!-- BEGINING fieldset 02 -->
         <legend>Registration</legend>
-        <label for="inpMlId" class="blkClss">E-mail:
+        <label for="emailId" class="blockClass">
+          E-mail:
           <input
             type="email"
-            name="inpMlNm"
-            id="inpMlId"
+            name="email"
+            id="emailId"
             placeholder="email@example.com"
-            required class="inpClss">
+            required class="formInput"
+          >
         </label>
-        <label for="inpPwdId" class="blkClss">Password:
+        <label for="passwordId" class="blockClass">
+          Password:
           <input
             type="password"
-            name="inpPwdNm"
-            id="inpPwdId"
+            name="password"
+            id="passwordId"
             minlength="8"
             maxlength="12"
             required
-            lass="inpClss">
+            lass="formInput"
+          >
         </label>
       </fieldset>
-      <fieldset class="fldset"> <!-- BEGINING fildset 03 -->
+      <fieldset class="fieldset"> <!-- BEGINING fieldset 03 -->
         <legend>An interesting fact about you!</legend>
         Do you love cats?
-        <label for="inpRadId1" class="inlnClss">
+        <label for="loveCatsId1" class="inlineClass">
           <input
             type="radio"
-            name="inpRadNm"
-            id="inpRadId1"
-            class="inpClss">
+            value="yes"
+            name="loveCats"
+            id="loveCatsId1"
+            class="formInput"
+          >
           Yes
         </label>
-        <label for="inpRadId2" class="inlnClss">
+        <label for="loveCatsId2" class="inlineClass">
           <input
             type="radio"
-            name="inpRadNm"
-            id="inpRadId2"
-            class="inpClss">
+            value="no"
+            name="loveCats"
+            id="loveCatsId2"
+            class="formInput"
+          >
           No
         </label>
-        <label for="inpClrId" class="blkClss">
+        <label for="favColorId" class="blockClass">
           What is your favorite color?
           <input
             type="color"
-            name="inpClrNm"
-            id="inpClrId"
-            class="inpClss">
+            name="favColor"
+            id="favColorId"
+            class="formInput"
+          >
         </label>
-        <label for="inpTmId" class="blkClss">
+        <label for="timeId" class="blockClass">
           What time do you go to bed?
           <input
             type="time"
-            name="inpTmNm"
-            id="inpTmId"
-            class="inpClss">
+            name="time"
+            id="timeId"
+            class="formInput"
+          >
         </label>
-        <label for="selMId" class="blkClss">
+        <label for="carBrandId" class="blockClass">
           What are your favorite brand of cars?
           <select
-            name="selMNm"
-            id="selMId"
+            name="carBrand"
+            id="carBrandId"
             multiple
-            class="inpClss">
-            <option value="value0" selected>BMW</option>
-            <option value="value1">Audi</option>
-            <option value="value2">Lada</option>
+            class="formInput"
+          >
+            <option value="bmw" selected>BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
           </select>
         </label>
-        <label for="inpRngId" class="blkClss">
+        <label for="workRangeId" class="blockClass">
           How do you rate our work?
           <input
             type="range"
-            name="inpRngNm"
-            id="inpRngId"
-            class="inpClss">
+            name="workRange"
+            id="workRangeId"
+            class="formInput"
+          >
         </label>
       </fieldset>
-      <fieldset class="fldset">  <!-- BEGINING fildset 04 -->
+      <fieldset class="fieldset">  <!-- BEGINING fieldset 04 -->
         <legend>Additional info:</legend>
-        <label for="txtAId" class="blkClss">
+        <label for="commentsId" class="blockClass">
           Comments:
           <textarea
             placeholder="About me..."
-            name="txtANm"
-            id="txtAId"
-            class="inpClss">
+            name="comments"
+            id="commentsId"
+            class="formInput"
+          >
           </textarea>
         </label>
-        <label for="selId" class="blkClss">
+        <label for="recommendationId" class="blockClass">
           Would you recommend us?
           <select
-            name="selNm"
-            id="selId"
-            class="inpClss">
-            <option value="value0">yes</option>
-            <option value="value1">no</option>
+            name="recommendation"
+            id="recommendationId"
+            class="formInput"
+          >
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
-      <label for="sbmtId" class="blkClss">
+      <label for="submitId" class="blockClass">
         <input
           type="submit"
-          id="sbmtId"
-          name="sbmtNm"
-          >
+          id="submitId"
+          name="submitBtn"
+        >
       </label>
     </form>
   </body>
